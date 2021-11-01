@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/aurumproptech1/static/css/main.f89ea564.chunk.css",
-    "main.js": "/aurumproptech1/static/js/main.aadab00b.chunk.js",
-    "main.js.map": "/aurumproptech1/static/js/main.aadab00b.chunk.js.map",
+    "main.js": "/aurumproptech1/static/js/main.e1ab8bb7.chunk.js",
+    "main.js.map": "/aurumproptech1/static/js/main.e1ab8bb7.chunk.js.map",
     "runtime-main.js": "/aurumproptech1/static/js/runtime-main.e9aefa10.js",
     "runtime-main.js.map": "/aurumproptech1/static/js/runtime-main.e9aefa10.js.map",
-    "static/js/2.83bd2b0a.chunk.js": "/aurumproptech1/static/js/2.83bd2b0a.chunk.js",
-    "static/js/2.83bd2b0a.chunk.js.map": "/aurumproptech1/static/js/2.83bd2b0a.chunk.js.map",
+    "static/js/2.5fcf9f64.chunk.js": "/aurumproptech1/static/js/2.5fcf9f64.chunk.js",
+    "static/js/2.5fcf9f64.chunk.js.map": "/aurumproptech1/static/js/2.5fcf9f64.chunk.js.map",
     "index.html": "/aurumproptech1/index.html",
     "static/css/main.f89ea564.chunk.css.map": "/aurumproptech1/static/css/main.f89ea564.chunk.css.map",
-    "static/js/2.83bd2b0a.chunk.js.LICENSE.txt": "/aurumproptech1/static/js/2.83bd2b0a.chunk.js.LICENSE.txt",
+    "static/js/2.5fcf9f64.chunk.js.LICENSE.txt": "/aurumproptech1/static/js/2.5fcf9f64.chunk.js.LICENSE.txt",
     "static/media/aurumm.5857a6c0.png": "/aurumproptech1/static/media/aurumm.5857a6c0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e9aefa10.js",
-    "static/js/2.83bd2b0a.chunk.js",
+    "static/js/2.5fcf9f64.chunk.js",
     "static/css/main.f89ea564.chunk.css",
-    "static/js/main.aadab00b.chunk.js"
+    "static/js/main.e1ab8bb7.chunk.js"
   ]
 }
