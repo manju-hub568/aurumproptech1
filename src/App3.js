@@ -150,16 +150,16 @@ function App3() {
                   </Typography>
             </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 255,marginLeft: '8px'}}  />
+                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 300,marginLeft: '8px'}}  />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Locality" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="Locality" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
                 </Box>
             </Box>
             <Box sx={{display:'flex', alignItems: 'center',marginLeft: '8px' }} width = {300}  mt = {8} height = {40}>
