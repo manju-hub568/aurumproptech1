@@ -25,7 +25,7 @@ export default function AlertDialogSlide(props) {
 
   return (
     <div>
-      <Button variant="contained" onClick={handleClickOpen} sx = {{width: 230, height: 45}} startIcon={<SearchIcon />}>
+      <Button variant="contained" onClick={handleClickOpen} sx = {{width: 255, height: 45}} startIcon={<SearchIcon />}>
         Search
       </Button>
       <Dialog

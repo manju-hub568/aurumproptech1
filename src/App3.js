@@ -99,7 +99,7 @@ function App3() {
 
    <Box className = {classes.container}>
         <Box className = {classes.grid1} style = {grid1}>
-        <Box p = {1}  sx={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+        <Box p = {1}  sx={{display:'flex', alignItems: 'center'}}>
             Search City & Database
                 <Box
                     onClick = {close}
@@ -108,7 +108,8 @@ function App3() {
                       cursor:'pointer',display:'flex',
                       justifyContent:'center',
                       alignItems:'center',
-                      borderRadius:'2px'
+                      borderRadius:'2px',
+                      marginLeft:'50px'
                      }} 
                       width = {35}
                        height = {28}
@@ -116,7 +117,7 @@ function App3() {
                       <CloseIcon />
                     </Box>
         </Box>
-        <FormControl variant="filled" sx={{minWidth: 230,marginLeft: '8px' }}>
+        <FormControl variant="filled" sx={{minWidth: 255,marginLeft: '8px' }}>
         <InputLabel id="demo-simple-select-filled-label">City</InputLabel>
         <Select
           labelId="demo-simple-select-filled-label"
@@ -130,7 +131,7 @@ function App3() {
           <MenuItem value={30}>Chennai</MenuItem>
         </Select>
       </FormControl>
-      <FormControl variant="filled" sx={{mt:0.5,minWidth: 230,marginLeft: '8px' }}>
+      <FormControl variant="filled" sx={{mt:0.5,minWidth: 255,marginLeft: '8px' }}>
         <InputLabel id="demo-simple-select-filled-label">Land Records</InputLabel>
         <Select
           labelId="demo-simple-select-filled-label"
@@ -149,19 +150,19 @@ function App3() {
                   </Typography>
             </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '8px'}}  />
+                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 255,marginLeft: '8px'}}  />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Locality" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="Locality" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
                 </Box>
             </Box>
-            <Box sx={{display:'flex', justifyContent: 'center', alignItems: 'center' }} width = {100} m = 'auto' mt = {8} height = {40}>
+            <Box sx={{display:'flex', alignItems: 'center',marginLeft: '8px' }} width = {300}  mt = {8} height = {40}>
                 <AlertDialogSlide />
             </Box>
         </Box>
@@ -169,7 +170,7 @@ function App3() {
            <Box p = {1}>
                Results
             </Box>
-            <Box height = {455} sx = {{overflow: 'auto',display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <Box height = {485} sx = {{overflow: 'auto',display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <Resbars detail = {"House No. B-92 Jeevan Park"} />
                 <Resbars detail = {"House No. F-92 Jeevan Park"} />
                 <Resbars detail = {"House No. A-92 Jeevan Park"} />

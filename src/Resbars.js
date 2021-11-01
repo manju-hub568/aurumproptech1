@@ -15,7 +15,7 @@ function Resbars(props) {
          style = {{
              'background-color':'white',
              'width':'220px','color':'grey',
-             'margin-left':'5px',
+             'margin-left':'3px',
              'margin-top':'10px',
              'text-transform':'none',
              'font-size':'15px',
