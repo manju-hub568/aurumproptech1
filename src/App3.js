@@ -109,7 +109,7 @@ function App3() {
                       justifyContent:'center',
                       alignItems:'center',
                       borderRadius:'2px',
-                      marginLeft:'30px'
+                      marginLeft:'50px'
                      }} 
                       width = {35}
                        height = {28}
@@ -166,7 +166,7 @@ function App3() {
                 <AlertDialogSlide />
             </Box>
         </Box>
-        <Box className = {classes.grid2} style = {grid2} border = {1}>
+        <Box className = {classes.grid2} style = {grid2}>
            <Box p = {1}>
                Results
             </Box>
