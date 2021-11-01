@@ -149,7 +149,7 @@ function App3() {
                   </Typography>
             </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '8px'}}  />
+                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '15px'}}  />
                 </Box>
                 <Box>
                     <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '8px'}} />
