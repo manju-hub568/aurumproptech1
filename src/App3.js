@@ -109,7 +109,7 @@ function App3() {
                       justifyContent:'center',
                       alignItems:'center',
                       borderRadius:'2px',
-                      marginLeft:'50px'
+                      marginLeft:'30px'
                      }} 
                       width = {35}
                        height = {28}
@@ -150,11 +150,7 @@ function App3() {
                   </Typography>
             </Box>
                 <Box>
-<<<<<<< HEAD
                     <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 255,marginLeft: '8px'}}  />
-=======
-                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '15px'}}  />
->>>>>>> bfcd13f51bbed7cef43959c4bad6e24b33514be5
                 </Box>
                 <Box>
                     <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
@@ -170,11 +166,11 @@ function App3() {
                 <AlertDialogSlide />
             </Box>
         </Box>
-        <Box className = {classes.grid2} style = {grid2}>
+        <Box className = {classes.grid2} style = {grid2} border = {1}>
            <Box p = {1}>
                Results
             </Box>
-            <Box height = {485} sx = {{overflow: 'auto',display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <Box height = {455} sx = {{overflow: 'auto',display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <Resbars detail = {"House No. B-92 Jeevan Park"} />
                 <Resbars detail = {"House No. F-92 Jeevan Park"} />
                 <Resbars detail = {"House No. A-92 Jeevan Park"} />
