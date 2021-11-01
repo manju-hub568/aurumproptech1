@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/aurumproptech1/static/css/main.f89ea564.chunk.css",
-    "main.js": "/aurumproptech1/static/js/main.8418dfe7.chunk.js",
-    "main.js.map": "/aurumproptech1/static/js/main.8418dfe7.chunk.js.map",
+    "main.js": "/aurumproptech1/static/js/main.e1ab8bb7.chunk.js",
+    "main.js.map": "/aurumproptech1/static/js/main.e1ab8bb7.chunk.js.map",
     "runtime-main.js": "/aurumproptech1/static/js/runtime-main.e9aefa10.js",
     "runtime-main.js.map": "/aurumproptech1/static/js/runtime-main.e9aefa10.js.map",
     "static/js/2.5fcf9f64.chunk.js": "/aurumproptech1/static/js/2.5fcf9f64.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.e9aefa10.js",
     "static/js/2.5fcf9f64.chunk.js",
     "static/css/main.f89ea564.chunk.css",
-    "static/js/main.8418dfe7.chunk.js"
+    "static/js/main.e1ab8bb7.chunk.js"
   ]
 }
