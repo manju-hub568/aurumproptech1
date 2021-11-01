@@ -150,7 +150,11 @@ function App3() {
                   </Typography>
             </Box>
                 <Box>
+<<<<<<< HEAD
                     <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 255,marginLeft: '8px'}}  />
+=======
+                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 230, my:0.5,marginLeft: '15px'}}  />
+>>>>>>> bfcd13f51bbed7cef43959c4bad6e24b33514be5
                 </Box>
                 <Box>
                     <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
