@@ -143,7 +143,7 @@ function App3() {
           <MenuItem value={30}>Land Records</MenuItem>
         </Select>
       </FormControl>
-      <Box width = {300} m = 'auto' mt = {2} height = {200}>
+      {/* <Box width = {300} m = 'auto' mt = {2} height = {200}>
             <Box>
                   <Typography color = "rgb(48, 48, 46)" pl = {1}>
                       Search Parameters
@@ -161,7 +161,7 @@ function App3() {
                 <Box>
                     <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
                 </Box>
-            </Box>
+            </Box> */}
             <Box sx={{display:'flex', alignItems: 'center',marginLeft: '8px' }} width = {300}  mt = {8} height = {40}>
                 <AlertDialogSlide />
             </Box>
