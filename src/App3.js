@@ -150,19 +150,19 @@ function App3() {
                   </Typography>
             </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 300,marginLeft: '8px'}}  />
+                    <TextField id="filled-basic" label="Address" variant="filled" size = "small" sx = {{minWidth: 255,marginLeft: '8px'}}  />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="First Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Locality" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="Locality" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
                 </Box>
                 <Box>
-                    <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5,marginLeft: '8px'}} />
+                    <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 255, my:0.5,marginLeft: '8px'}} />
                 </Box>
             </Box>
-            <Box sx={{display:'flex', alignItems: 'center',marginLeft: '8px' }} width = {300}  mt = {8} height = {40}>
+            <Box sx={{display:'flex', alignItems: 'center',marginLeft: '8px' }} width = {300}  mt = {12} height = {40}>
                 <AlertDialogSlide />
             </Box>
         </Box>
@@ -170,7 +170,7 @@ function App3() {
            <Box p = {1}>
                Results
             </Box>
-            <Box height = {455} sx = {{overflow: 'auto',display:'flex',flexDirection:'column',alignItems:'center'}}>
+            <Box height = {465} sx = {{overflow: 'auto',display:'flex',flexDirection:'column',alignItems:'center'}}>
                 <Resbars detail = {"House No. B-92 Jeevan Park"} />
                 <Resbars detail = {"House No. F-92 Jeevan Park"} />
                 <Resbars detail = {"House No. A-92 Jeevan Park"} />
