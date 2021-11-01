@@ -1,22 +1,29 @@
-import React, {useEffect, useState, useRef} from 'react';
-import {Box,AppBar,Toolbar,IconButton,Typography,Grid,InputLabel,MenuItem,FormControl,Select,TextField} from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
-import MenuIcon from '@mui/icons-material/Menu';
-import aurumm from './images/aurumm.png';
+import React, {useState,useEffect, useRef} from 'react';
+import Boxres from './Boxres';
+import Aurum from './images/Aurum.png';
 import { makeStyles } from '@mui/styles';
-import Table from './Tab';
-import Resbars from './Resbars';
+import {Box,AppBar,Toolbar,IconButton,Typography,Grid,InputLabel,MenuItem,FormControl,Select,TextField} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import AlertDialogSlide from './AlertDialogSlide';
-import StickyHeadTable from './Table2';
+import CloseIcon from '@mui/icons-material/Close';
+import CancelRoundedIcon from '@mui/icons-material/CancelRounded';
+import Resbars from './Resbars';
+import Table from './Tab';
 
 const useStyles = makeStyles({
     GridHeight: {
         height: 'calc(100vh - 70px)',
         overflow: 'auto'
     },
+    resltB: {
+        border: '1px solid rgb(226, 226, 220)',
+        backgroundColor: 'white',
+        padding: '8px',
+        borderRadius: '3px',
+    },
   });
 
-function App() {
+function App2() {
     const classes = useStyles();
     const [age, setAge] = useState('');
 
@@ -46,7 +53,8 @@ function App() {
           'background-color':'white'
         });
       }
-    // const ref = useRef(null);
+
+    const ref = useRef(null);
 
     // useEffect(() => {
     //   alert(ref.current.offsetWidth);
@@ -59,14 +67,14 @@ function App() {
             <Toolbar variant="dense" style = {{'height':'70px','background-color':'white','box-shadow':'1px 1px 4px grey'}}>
           <Typography variant="h6" color="inherit" component="div">
             <Box width = {200} height = {60}>
-                <img src = {aurumm} width = '300px' height = '60px' alt = 'Aurum' />
+                <img src = {Aurum} width = '200px' height = '60px' alt = 'Aurum' />
            </Box>
           </Typography>
         </Toolbar>
       </AppBar>
     </Box>
-    <Grid container>
-    <Box
+    <Grid container className = {classes.GridHeight}>
+        <Box 
                 sx = {{
                   width:'342px',
                   backgroundColor:'white',
@@ -74,7 +82,7 @@ function App() {
                   top:'70px',
                   left:'0',
                   zIndex: '3',
-                  height: 'calc(100vh - 72px)',
+                  height: 'calc(100vh - 70px)',
                 }}
                 style = {close}
         >
@@ -149,36 +157,30 @@ function App() {
                     <TextField id="filled-basic" label="Second Party" variant="filled" size = "small" sx = {{minWidth: 300, my:0.5}} />
                 </Box>
             </Box>
-            <Box sx={{display:'flex', justifyContent: 'center', alignItems: 'center' }} width = {300} m = 'auto' mt = {8} height = {40}>
+            <Box sx={{display:'flex', justifyContent: 'center', alignItems: 'center' }} width = {300} m = 'auto' mt = {12} height = {40}>
                 <AlertDialogSlide />
             </Box>
             </Box>
-        {/* 311 37 */}
-        <Grid item lg = {4} sx = {{backgroundColor:'white', height:'calc(100vh - 70px)'}}>
-        <Typography variant="label" width = {30}
-         sx = {{
-             display:'inline-block',
-             paddingLeft:'7px',
-             height: 'calc(100vh - 72px)',
-             boxShadow: '0px 0px 3px grey'
-             }}
-             onClick = {Open}
-             >
-                <MenuIcon style = {{'margin-top':'5px'}} />
-        </Typography>
-         <Box
-         width = {375}
-         sx = {{
-             position:'absolute',
-             top:'72px',
-             left:'38px',
-             height:'calc(100vh - 75px)'
-         }}>
-             <Box pl = {1} pt = {0.5}>
-                 Results
+        <Grid item xs={12}>
+        <Grid container className = {classes.GridHeight}>
+        <Grid item xs={5} style = {{'background-color':'rgb(226, 226, 220)'}}>
+            <Box sx = {{display:'flex',alignItems:'center'}}>
+              <Box pl = {1.8}
+               sx = {{position:'absolute',top:'71px',left:'0',
+                      zIndex:'2',height: 'calc(100vh - 73px)',
+                      backgroundColor:'white',
+                      opacity:'0.8'
+                      }}>
+                <IconButton edge="start" color="inherit" aria-label="menu" onClick = {Open}>
+                    <MenuIcon />
+                </IconButton>
+              </Box>
+                  <Typography color = "rgb(48, 48, 46)" ml = {7.4} mt = {1}>
+                      Results
+                    </Typography>
             </Box>
-            <Box  height = "calc(100vh - 100px)" sx = {{overflow:'auto'}}>
-            <Resbars detail = {"House No. B-92 Jeevan Park"} />
+            <Box sx={{display:'flex', alignItems:'center', flexDirection: 'column'}} height = "75vh">
+                <Resbars detail = {"House No. B-92 Jeevan Park"} />
                 <Resbars detail = {"House No. F-92 Jeevan Park"} />
                 <Resbars detail = {"House No. A-92 Jeevan Park"} />
                 <Resbars detail = {"House No. C-92 Jeevan Park"} />
@@ -187,21 +189,21 @@ function App() {
                 <Resbars detail = {"House No. A-92 Sudershan Park New Delhi"} />
                 <Resbars detail = {"House No. Rz-A/92/2 Second Floor Jeevan Park"} />
                 <Resbars detail = {"House No. Prop No Rz E-92 Plot No.92 Block E Jeevan Park"} />
-                <Resbars detail = {"House No. A-92 Jeevan Park"} />
-                <Resbars detail = {"House No. C-92 Jeevan Park"} />
-                <Resbars detail = {"Road No. A-91-92 Jeevan Pa"} />
-                <Resbars detail = {"House No. Rz-92-D-2 Jeevan"} />
             </Box>
-        </Box>
         </Grid>
-        <Grid item lg = {8} className = {classes.GridHeight}>
-            <Table />
-            {/* <StickyHeadTable /> */}
+        <Grid
+         item xs={7} className = {classes.GridHeight}
+          sx = {{backgroundColor:'white',display:'flex',alignItems:'center',flexDirection:'column'}}
+          >
+                {/* <Boxres /> */}
+                <Table />
+        </Grid>
+        </Grid>
         </Grid>
     </Grid>
-            </Box>
+        </Box>
         </>
     )
 }
 
-export default App;
+export default App2;
